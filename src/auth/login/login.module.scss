@@ -1,0 +1,202 @@
+.wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgb(46, 212, 204);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .LOGIN_container {
+        height: 600px;
+        max-height: 500px;
+        min-height: 500px;
+        max-width: 400px;
+        min-width: 400px;
+        width: 400px;
+        border-radius: 20px;
+        text-align: center;
+        margin-top: -120px;
+
+        .LOGIN_header {
+            width: 100%;
+            color: rgb(11, 87, 229);
+            font-size: 1.3rem;
+        }
+
+        .LOGIN_title {
+            margin-top: -24px;
+            max-width: 100%;
+            min-width: 100%;
+            max-height: 40px;
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+
+            .LOGIN_title1 {
+                font-size: 1rem;
+                font-weight: 400;
+            }
+
+            .LOGIN_title2 {
+                margin-top: -24px;
+            }
+        }
+
+        .LOGIN_main {
+            width: 100%;
+            height: 350px;
+            background-color: rgb(235, 239, 230);
+            border-radius: 10px;
+            text-align: center;
+            margin-top: 10px;
+            align-items: center;
+
+            .LOGIN_main1 {
+                display: flex;
+                justify-content: space-around;
+                width: 100%;
+                font-size: 1rem;
+                font-weight: 600;
+                text-align: center;
+                align-items: center;
+                height: 30px;
+                position: relative;
+                
+                .LOGIN_main1_1 {
+                    &:active~label {
+                        position : absolute ;
+                        width : 40%;
+                        height : 2px;
+                        margin-top : 40px;
+                        margin-right : 200px;
+                        background-color : gray;
+                    }
+                }
+
+                .LOGIN_main1_2 {
+                    &:active~label {
+                        position : absolute ;
+                        width : 40%;
+                        height : 2px;
+                        margin-left: 200px;
+                        margin-top : 40px;
+                        background-color : gray;
+                    }
+                }
+            }
+            .LOGIN_main2 {
+
+                .LOGIN_main2_input {
+                    margin-top: 20px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    margin-bottom: 30px;
+
+                    .LOGIN_main2_input_one {
+                        width: 77%;
+                        outline: none;
+                        border: none;
+                        height: 30px;
+                        border-bottom: 1px solid #333;
+
+                        
+
+                        &:hover~label {
+                            animation: inputOut .5s ease both;
+                        }
+
+                        &:focus~label {
+                            animation: inputOut .5s ease both;
+                        }
+
+                        @keyframes inputOut {
+                            to {
+                                transform: translateY(-20px);
+                                color: red;
+                            }
+                        }
+                    }
+
+                    .LOGIN_label {
+                        position: absolute;
+                        margin-right: 160px;
+                    }
+                    
+                }
+
+            }
+
+
+            .LOGIN_main3 {
+                width: 100%;
+
+                .LOGIN_main3_btn {
+                    width: 80%;
+                    height: 40px;
+                    border-radius: 5px;
+                    border: none;
+                    background-color: rgb(26, 166, 231);
+                    color: aliceblue;
+                    margin-bottom: 20px;
+                    cursor: pointer;
+
+                    &:hover {
+                        opacity: 0.8;
+                    }
+                }
+
+            }
+
+            .LOGIN_main4 {
+                min-height: 30px;
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                
+                .LOGIN_main4_btn {
+                    width: 80%;
+                    height: 40px;
+                    width: 80%;
+                    height: 40px;
+                    border-radius: 5px;
+                    border: none;
+                    background-color: rgb(227, 233, 236);
+                    color: rgb(42, 128, 203);
+                    border: 1px solid #e1d5d5;
+                    cursor: pointer;
+
+                    
+
+                    &:hover {
+                        opacity: 0.8;
+                        color: violet;
+                    }
+                }
+            }
+
+            .LOGIN_main5 {
+                display: flex;
+                justify-content: space-around;
+                text-align: center;
+                align-items: center;
+                font-size: .8rem;
+
+                .LOGIN_main5_1 {
+                    text-decoration: none;
+                }
+
+                .LOGIN_main5_2 {
+                    color: gray;
+                }
+            }
+        }
+    }
+
+    .LOGIN_footer {
+        margin-top: 20px;
+    }
+}

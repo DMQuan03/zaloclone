@@ -1,0 +1,56 @@
+.wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+.HOME_nav {
+    flex: 1;
+    background-color: rgb(86, 61, 48);
+    border-right: 2px solid #0c0b0b;
+    position: fixed;
+    left: 0;
+    width: 69px;
+    top: 0;
+    bottom: 0;
+
+    .HOME_nav2 {
+        margin-top: 20px;
+        font-size: 1.8rem;
+    }
+
+    .HOME_nav3 {
+        margin-top: 400px;
+        font-size: 2rem;
+    }
+}
+.HOME_main {
+    background-color: rgb(43, 43, 60);
+    position: fixed;
+    left: 70px;
+    width: 370px;
+    top: 0;
+    bottom: 0;
+    flex: 2;
+    height: auto;
+    overflow: auto;
+}
+.HOME_content {
+    flex: 7;
+    background-color: aqua;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 1160px;
+    z-index: 1000;
+    position: fixed;
+    overflow: hidden;
+    overflow: auto;
+}
+}

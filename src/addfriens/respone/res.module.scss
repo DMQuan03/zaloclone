@@ -1,0 +1,11 @@
+.anmsforIcons {
+    animation: inIcons .5s ease both ;
+}
+
+@keyframes inIcons {
+    from {
+        transform: scale(0);
+    }to {
+        transform: scale(1);
+    }
+}

@@ -1,0 +1,114 @@
+.wrapper {
+    .header {
+        display: flex;
+        justify-content: space-between;
+        text-align: center;
+        align-items: center;
+        background-color: rgb(12, 7, 7);
+        background-color: rgb(41, 26, 26);
+        // width: 71.5%;
+        width: 1143px;
+        min-width: 1143px;
+        max-width: 1143px;
+        position: fixed;
+        height: 100px;
+        z-index: 1000;
+        color: blanchedalmond;
+        top: 0;
+    }
+
+    
+
+    .main_chat {
+        height: auto;
+        min-height: 600px;
+        background-color: rgb(15, 42, 66);
+        margin-top: 84px;
+        position: relative;
+        padding: 10px;
+        overflow: hidden;
+        margin-bottom: 80px;
+    }
+
+    .input_text {
+        position: fixed;
+        // width: 71.5%;
+        width: 1142px;
+        max-width: 1143px;
+        min-width: 1143px;
+        bottom: 0;
+        height: 80px;
+        background-color: rgb(15, 9, 9);
+        background-color: rgb(41, 26, 26);
+
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+
+        .input_text2 {
+            height: 25%;
+            background-color: chocolate;
+            background-color: rgb(73, 49, 49);
+            color: #e0dada;
+            display: flex;
+            justify-content: flex-start;
+        }
+
+        .input_text1 {
+            height: 65%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+
+            .input_styles {
+                width: 40%;
+                margin-top: 10px;
+                height: 30px;
+                border: none;
+                outline: none;
+                color: #e0dada;
+                background: transparent;
+                backdrop-filter: blur(15px);
+                border-bottom: 2px #e0dada solid;
+
+                &:hover {
+                    animation: styInput .8s ease both;
+                }
+
+                &:hover~label {
+                    animation: labels 1.3s ease both;
+                }
+
+                &:focus~label {
+                    animation: labels 1.3s ease both;
+                }
+
+                &:focus {
+                    animation: styInput .8s ease both;
+                }
+
+
+            }
+
+            @keyframes styInput {
+                to {
+                    border-bottom: 2px #d3b611 solid;
+                    width: 86%;
+                }
+            }
+
+            @keyframes labels {
+                to {
+                    margin-left: -800px;
+                    transform: translateY(-16px);
+                }
+            }
+        }
+    }
+}
+
+.scr_bt {
+    height: 721.5px;
+    width: 100%;
+}

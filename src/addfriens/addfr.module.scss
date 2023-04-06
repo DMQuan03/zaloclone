@@ -1,0 +1,36 @@
+.input_search {
+    width: 100%;
+    background-color: rgb(39, 24, 24);
+    position: absolute;
+    top: 0;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: bisque;
+
+    .input_text {
+        background: transparent;
+        margin-top: 20px;
+        backdrop-filter: blur(15px);
+        border: none;
+        outline: none;
+        border-bottom: 1px solid #e9e3e388;
+        color: aliceblue;
+
+        &:hover~label {
+            animation: outlabel .8s ease both;
+        }
+
+        &:focus~label {
+            animation: outlabel .8s ease both;
+        }
+    }
+
+    @keyframes outlabel {
+        to {
+            transform: translateY(-15px);
+        }
+    }
+}

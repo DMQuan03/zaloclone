@@ -1,0 +1,145 @@
+#OTHER.wrapper {
+    width: 100%;
+    background-color: aliceblue;
+    background-color: rgb(15, 42, 66);
+    color: antiquewhite;
+    height: auto;
+    min-height: 70px;
+    margin-top: 40px;
+    #OTHER.mess {
+        width: auto;
+        margin: 10px;
+        max-width: 550px;
+
+        #OTHER.info_user {
+            display: flex;
+            height: 50px;
+            justify-content: space-between;
+            align-items: center;
+            text-align: center;
+
+            #OTHER.info_user1 {
+                width : 50px ;
+                height : 50px;
+                border-radius : 50%;
+                margin-left :0;
+            }
+
+            #OTHER.name_user {
+                position : absolute; 
+                left: 0;
+                margin-left: 110px;
+                font-weight : 600;
+            }
+        }
+
+        #OTHER.info_mess {
+            max-width: 550px;
+            min-height: 50px;
+            margin-top: 6px;
+            height: auto;
+            color: black;
+            display: flex;
+
+            #OTHER.info_mess1 {
+                width: auto;
+                height: auto;
+                background-color: rgb(218, 215, 10);
+                max-width: 400px;
+                flex-wrap: wrap;
+                min-width: 100px;
+                padding: 5px;
+                box-sizing: border-box;
+                margin-left: 50px;
+                display: flex;
+                justify-content: flex-start;
+                border-radius: 20px;
+            }
+
+            #OTHER.time_send {
+                margin-left : 10px;
+                margin-top : 5px;
+                font-weight : 600;
+                color: aliceblue;
+            }
+        }
+    }
+}
+
+#YOU.wrapper {
+    width: 100%;
+    background-color: aliceblue;
+    background-color: rgb(15, 42, 66);
+    color: blanchedalmond;
+    height: auto;
+    min-height: 70px;
+    margin-top: 40px;
+    display: flex;
+    justify-content: flex-end;
+    #YOU.mess {
+        width: auto;
+        margin: 10px;
+        max-width: 550px;
+
+        #YOU.info_user {
+            display: flex;
+            height: 50px;
+            justify-content: space-between;
+            align-items: center;
+            text-align: center;
+
+            #YOU.info_user1 {
+                width : 50px ;
+                height : 50px;
+                position: absolute;
+                right: 0;
+                right: 40px;
+                border-radius : 50%;
+            }
+
+            #YOU.name_user {
+                position : absolute; 
+                margin-right: 120px;
+                right: 0;
+                color : black; 
+                color: blanchedalmond;
+                font-weight : 600;
+            }
+        }
+
+        #YOU.info_mess {
+            max-width: 550px;
+            min-height: 50px;
+            margin-top: 6px;
+            height: auto;
+            color: black;
+            display: flex;
+
+            #YOU.info_mess1 {
+                width: auto;
+                height: auto;
+                background-color: rgb(19, 232, 48);
+                max-width: 400px;
+                flex-wrap: wrap;
+                min-width: 100px;
+                padding: 5px;
+                box-sizing: border-box;
+                margin-left: 50px;
+                display: flex;
+                justify-content: flex-start;
+                border-radius: 20px;
+            }
+
+            #YOU.time_send {
+                position: absolute;
+                right: 30px;
+                margin-top: 62px;
+                margin-left: 40px;
+                color: aliceblue;
+            }
+        }
+    }
+}
+
+
+
